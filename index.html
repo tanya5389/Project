@@ -3,8 +3,12 @@
 	<head>
 		<meta charset=utf-8 />
 		<title>Definition Fitness</title>
+		<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet'>
 		<script src="https://use.fontawesome.com/ce5dcdbc7b.js"></script>
-		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/style.css" media="screen" />
+		<link rel="stylesheet" href="style/reset.css" media="screen">
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="scripts/scripts.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
 		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -23,6 +27,26 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+
+
+		<!-- loading libraries -->
+		<!-- Add the href for loading jQuery Validate -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
+		
+		<script>
+			$("form").validate({
+				rules: {
+					// firstname: "required",
+					// lastname: "required"
+				},
+				messages: {
+					firstname: "Add your first name here",
+					lastname: "Then add your second name here"
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<div id="container">
@@ -78,16 +102,43 @@
 					</div>
 				</div>
 				<div id="forthlevelright">
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdefinitionfitnesswollongong%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdefinitionfitnesswollongong%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 				</div>
 			</div>
 			<footer>
 				<div id="bottomcontainer">
-					<h2>Location</h2>
-					<p>All outdoor sessions are at Stuart Park North Wollongong. During wet weather, classes are currently held at "The Definition GYM" 108 Auburn St Wollongong.</p>
+					<div id="bottomleft">
+						<h2>Contact Us</h2>
+						<p>All outdoor sessions are at Stuart Park North Wollongong. During wet weather, classes are currently held at "The Definition GYM" 108 Auburn St Wollongong.</p>
+						<main>
+						<!-- <div id="content"> -->
+							<form id="myForm"> <!-- novalidate -->
+							<fieldset>
+								<!-- <legend>Profile</legend> -->
+									<label>
+										<span>First name</span>
+										<input type=text placeholder="Add your first name" name="firstname" required><!-- required -->
+									</label>
+									<label>
+										<span>Last name</span>
+										<input type=text placeholder="Add your last name" name="lastname" required><!-- required -->
+									</label>
+							</fieldset>
+
+							<button type="submit">Submit</button>
+							</form>
+						<!-- </div> -->
+					</main>
+
+					</div>
+					<div id="bottomright">
+						<h2>Location</h2>
+						<p>All outdoor sessions are at Stuart Park North Wollongong. During wet weather, classes are currently held at "The Definition GYM" 108 Auburn St Wollongong.</p>
+					</div>
 				</div>
 			</footer>
 			</div>
 		</div>
+
 	</body>
 </html>
