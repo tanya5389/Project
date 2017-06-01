@@ -5,6 +5,10 @@ body {
 	font-size: 10pt;
 }
 
+.background {
+	width: 100%;
+}
+
 #container {
 	background-color: #fff;
 	margin: 0 auto;
@@ -87,10 +91,8 @@ footer {
 #bottomcontainer{
 	width: 70%;
 	margin: 0 auto;
+	background-color: yellow;
 /*	overflow: hidden;*/
-}
-.background {
-	width: 100%;
 }
 
 .logo {
@@ -129,74 +131,19 @@ footer {
     color: #fff;
 }
 
-
-/*Dropdown navigations*/
-.dropbtn {
-/*    display: flex;*/
-    background-color: #ff6600;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ff6600;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-	background-color: #414142
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #999;
-}
-/*Dropdown navigations end*/
-
-/*Beating logo effect*/
-#beating {
-	animation: beat .9s infinite alternate;
-	transform-origin: center;
-}
-/* Heart beat animation */
-@keyframes beat {
-	to { transform: scale(1.2);
-}	
-
-
 /*Contact Form*/
 
 #bottomleft {
   float: left;
   width: 66%;
   padding: 0 0 1em 1.5em;
+  background-color: purple;
 }
 
 #bottomright {
   float: right;
   width: 33%;
+  background-color: yellow;
 }
 
 
@@ -271,4 +218,60 @@ label input.error::-moz-placeholder {  /* Firefox 19+ */
  
 label input.error:-ms-input-placeholder {  
   color: whitesmoke !important;  
+}
+
+
+/*Dropdown navigations*/
+.dropbtn {
+/*    display: flex;*/
+    background-color: #ff6600;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff6600;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #414142
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #999;
+}
+/*Dropdown navigations end*/
+
+/*Beating logo effect*/
+#beating {
+	animation: beat .9s infinite alternate;
+	transform-origin: center;
+}
+/* Heart beat animation */
+@keyframes beat {
+	to { transform: scale(1.2);
 }
