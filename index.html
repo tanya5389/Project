@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta charset=utf-8 />
+		<meta charset="UTF-8" />
 		<title>Definition Fitness</title>
 		<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet'>
 		<script src="https://use.fontawesome.com/ce5dcdbc7b.js"></script>
@@ -28,25 +28,6 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
-
-		<!-- loading libraries -->
-		<!-- Add the href for loading jQuery Validate -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
-		
-		<script>
-			$("form").validate({
-				rules: {
-					// firstname: "required",
-					// lastname: "required"
-				},
-				messages: {
-					firstname: "Add your first name here",
-					lastname: "Then add your second name here"
-				}
-			});
-		</script>
 	</head>
 	<body>
 		<div id="container">
@@ -57,12 +38,12 @@
   						<div class="dropdown-content">
     						<a href="#about">About Us</a>
    							<a href="#timetable">Timetable</a>
-    						<a href="#">Contact</a>
+    						<a href="#contact">Contact</a>
   						</div>
 					</div> <!-- Right side social buttons -->
 						<ul class="navicons">      						
 							<li><a href="https://www.facebook.com/definitionfitnesswollongong/" target=_new><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-							<li><a href=#><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></i></a></li>
+							<li><a href="#contact"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></i></a></li>
 							<li><a href="https://www.youtube.com/user/DEFINITIONFITNESS1" target=_new><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a></li>
 						</ul>
 				</div>
@@ -108,7 +89,7 @@
 			<footer>
 				<div id="bottomcontainer">
 					<div id="bottomleft">
-						<h2>Contact Us</h2>
+						<h2>Contact Us</h2><a name="contact"></a>
 						<p>All outdoor sessions are at Stuart Park North Wollongong. During wet weather, classes are currently held at "The Definition GYM" 108 Auburn St Wollongong.</p>
 					<main>
 						<div id="content">
@@ -117,11 +98,15 @@
 								<legend>Profile</legend>
 									<label>
 										<span>First name</span>
-										<input type=text placeholder="Add your first name" name="firstname" required><!-- required -->
+										<input type="text" placeholder="Add your first name" name="firstname" required><!-- required -->
 									</label>
 									<label>
-										<span>Last name</span>
-										<input type=text placeholder="Add your last name" name="lastname" required><!-- required -->
+										<span>Email</span>
+										<input type="text" placeholder="Add your email" name="email" required><!-- required -->
+									</label>
+									<label>
+										<span>Enquiry</span>
+										<input type="text" class="resizedTextbox" maxlength="500" placeholder="What would you like to ask?" name="enquiry" required><!-- required -->
 									</label>
 							</fieldset>
 
@@ -129,6 +114,29 @@
 							</form>
 						</div>
 					</main>
+
+						<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="script/scripts.js"></script>
+
+
+		<!-- loading libraries -->
+		<!-- Add the href for loading jQuery Validate -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
+		
+		<script>
+			$("form").validate({
+				rules: {
+					// firstname: "required",
+					// lastname: "required"
+				},
+				messages: {
+					firstname: "Add your first name here",
+					lastname: "Then add your second name here"
+				}
+			});
+		</script>
 
 					</div>
 					<div id="bottomright">
