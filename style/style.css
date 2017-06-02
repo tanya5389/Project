@@ -230,7 +230,6 @@ label input.error:-ms-input-placeholder {
 
 /*Dropdown navigations*/
 .dropbtn {
-/*    display: flex;*/
     background-color: #ff6600;
     color: white;
     padding: 16px;
