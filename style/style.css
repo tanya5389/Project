@@ -142,6 +142,7 @@ footer {
   width: 33%;
 }
 
+
 /*Contact Form*/
 
 main {
@@ -278,5 +279,6 @@ label input.error:-ms-input-placeholder {
 }
 /* Heart beat animation */
 @keyframes beat {
-	to { transform: scale(1.2);
+	to { transform: scale(1.2); }
 }
+
